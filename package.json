@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/masngun/apprestapi/issues"
   },
-  "homepage": "https://github.com/masngun/apprestapi#readme"
+  "homepage": "https://github.com/masngun/apprestapi#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "mysql": "^2.18.1"
+  }
 }
