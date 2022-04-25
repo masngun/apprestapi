@@ -1,5 +1,7 @@
 'use strict';
 
+const { json } = require('express/lib/response');
+
 module.exports = function(app) {
     var jsonku = require('./controller');
 
@@ -8,4 +10,10 @@ module.exports = function(app) {
 
     app.route('/tampil')
         .get(jsonku.tampilsemuamahasiswa);
+    
+    app.route('/tampil/:id')
+       .get(jsonku.tampilberdasarid);
+
+     
+       
 }
